@@ -43,12 +43,12 @@ const Main = () => {
 
   const handleSubmit = () => {
     setresult(true);
-    setTimeout(() => {
-      const result = handleOptionShuffling(countries);
-      setOptions(result.options);
-      setselectedCountry(result.selectedCountry);
-      setresult(false);
-    }, 2000);
+  };
+  const handlePlayAgain = () => {
+    const result = handleOptionShuffling(countries);
+    setOptions(result.options);
+    setselectedCountry(result.selectedCountry);
+    setresult(false);
   };
 
   if (isArrayCheck(countries)) {
@@ -60,13 +60,14 @@ const Main = () => {
             label={`Which one is the capital city of ${selectedCountry?.name}`}
             className="text-black my-2 question-container"
           />
-          {options && options.map((op)=>(
-          <BorderButton
-            handleAnswerClick={handleAnswerClick}
-            selectedAnswer={selectedAnswer}
-            value={op}
-          />
-          ))}
+          {options &&
+            options.map((op) => (
+              <BorderButton
+                handleAnswerClick={handleAnswerClick}
+                selectedAnswer={selectedAnswer}
+                value={op}
+              />
+            ))}
           {result ? (
             String(selectedAnswer).toLocaleLowerCase() ===
             String(selectedCountry?.capital).toLocaleLowerCase() ? (
@@ -83,6 +84,16 @@ const Main = () => {
             )
           ) : null}
           <div className="text-center">
+            {result && (
+              <Button.Semantic
+                type="submit"
+                variant="primary"
+                size="small"
+                label="Play Again"
+                onClick={handlePlayAgain}
+                className="bg-blue-500 mr-2"
+              />
+            )}
             <Button.Semantic
               type="submit"
               variant="primary"
@@ -112,13 +123,13 @@ const Main = () => {
           label={`Which one is the capital city of Country`}
           className="text-black my-2 question-container"
         />
-        {["Option A","Option B","Option C"].map((op)=>(
+        {['Option A', 'Option B', 'Option C'].map((op) => (
           <BorderButton
             handleAnswerClick={handleAnswerClick}
             selectedAnswer={selectedAnswer}
             value={op}
           />
-          ))}
+        ))}
         {result ? (
           String(selectedAnswer).toLocaleLowerCase() ===
           String(selectedCountry?.capital).toLocaleLowerCase() ? (
