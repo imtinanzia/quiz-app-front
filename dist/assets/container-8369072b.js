@@ -1,0 +1,1 @@
+import{r as t,e,j as a}from"./index-2b8707a4.js";const c=({className:o="",children:s})=>{const r=t.useMemo(()=>({root:e(["container",o])}),[o]);return a("div",{className:r.root,children:s})};export{c as C};

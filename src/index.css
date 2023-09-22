@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.headline {
+	@apply text-7xl leading-12 font-semibold tracking-tight;
+}
+
+.heading-one,
+.markdown h1 {
+	@apply text-headingOne leading-[64px] font-bold ;
+}
+
+.heading-two,
+.markdown h2 {
+	@apply text-headingTwo leading-[58px] font-semibold;
+}
+
+.heading-three,
+.markdown h3 {
+	@apply text-headingThree leading-[32px] font-medium;
+}
+
+.heading-four,
+.markdown h4 {
+	@apply text-headingFour leading-[29px] font-semibold;
+}
+
+.heading-five,
+.markdown h5 {
+	@apply text-headingFive leading-6 font-semibold;
+}
+
+.heading-six,
+.markdown h6 {
+	@apply text-headingSix leading-7 font-semibold;
+}
+
+.subheading {
+	@apply text-sm uppercase font-bold tracking-wider;
+}
+
+.text-lead {
+	@apply text-leadPara leading-10 ;
+}
+
+.text-regular,
+.markdown p {
+	@apply text-regularPara leading-8;
+}
+
+.text-small,
+.markdown small {
+	@apply text-smallPara leading-8;
+}
+
+.text-xsmall,
+.markdown small {
+	@apply text-xsmallPara;
+}
+

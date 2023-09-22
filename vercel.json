@@ -1,0 +1,59 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" },
+    {
+      "source": "/how-to-play-stock-squad",
+      "destination": "/how-to-play-stock-squad"
+    },
+    {
+      "source": "/how-to-play-nse",
+      "destination": "/how-to-play-nse"
+    },
+    {
+      "source": "/how-to-play-us",
+      "destination": "/how-to-play-us"
+    },
+    {
+      "source": "/responsible-gaming-policy",
+      "destination": "/responsible-gaming-policy"
+    },
+    {
+      "source": "/jobs",
+      "destination": "/jobs"
+    },
+    {
+      "source": "/terms-of-use",
+      "destination": "/terms-of-use"
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms-and-conditions"
+    },
+    {
+      "source": "/legality-statement",
+      "destination": "/legality-statement"
+    },
+    {
+      "source": "/help-desk",
+      "destination": "/help-desk"
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact-us"
+    },
+    {
+      "source": "/fantasy-apps",
+      "destination": "/fantasy-apps"
+    },
+    {
+      "source": "/about",
+      "destination": "/about"
+    },
+    {
+      "source": "/points-system-stock-squad",
+      "destination": "/points-system-stock-squad"
+    },
+    { "source": "/faqs", "destination": "/faqs" }
+  ]
+}

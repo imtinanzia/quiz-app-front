@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`snapshot 1`] = `
+<div
+  className="container"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;

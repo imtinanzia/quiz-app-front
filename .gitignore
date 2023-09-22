@@ -1,0 +1,37 @@
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.env*
+.fseventsd
+.history
+.LSOverride
+.next
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.vercel
+.VolumeIcon.icns
+.vscode
+[Dd]esktop.ini
+*.cab
+*.lnk
+*.msi
+*.msix
+*.msm
+*.msp
+*.stackdump
+$RECYCLE.BIN/
+ehthumbs_vista.db
+ehthumbs.db
+Icon
+Network Trash Folder
+node_modules
+coverage
+Temporary Items
+Thumbs.db
+Thumbs.db:encryptable
